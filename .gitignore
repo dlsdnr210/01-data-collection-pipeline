@@ -1,20 +1,46 @@
-# ----------------------------------------------------------------------------------
-# github에 올릴 파일만 허용
-#   - main.py
-#   - src
-#   - 
-# ----------------------------------------------------------------------------------
-
 # 기본적으로 모든 파일/폴더 제외
 *
 
-# git 관리 파일
+# Git 관리 / 설정 파일
 !.gitignore
 !.env.example
 !requirements.txt
+!README.md
 
 # 실행 파일
 !main.py
 
+# Lambda Handler
+!handlers/
+!handlers/**
+
 # Python 소스 패키지
 !src/
+!src/**
+
+# 문서
+!docs/
+!docs/**
+
+# 노트북
+!notebooks/
+!notebooks/**
+
+# 실제 환경변수 제외
+.env
+
+# 데이터 제외
+data/
+
+# Python 캐시 제외
+__pycache__/
+*.pyc
+*.pyo
+
+# 가상환경 제외
+venv/
+.venv/
+
+# Jupyter Notebook checkpoint 제외
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
